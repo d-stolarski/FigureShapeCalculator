@@ -1,9 +1,10 @@
-public class Rectangle {
+public class Rectangle extends Shape{
 
     private double dimensionA;
     private double dimensionB;
 
     public Rectangle(double dimensionA, double dimensionB) {
+        super();
         this.dimensionA = dimensionA;
         this.dimensionB = dimensionB;
     }
