@@ -1,18 +1,18 @@
 public class ShapeCalculator {
 
-    public static double caclculateRectangleArea(Rectangle rectangle){
-        return rectangle.getDimensionA() * rectangle.getDimensionB();
+    public static double calculateArea(Shape shape) {
+        if (shape instanceof Rectangle) {
+            return ((Rectangle) shape).getDimensionA() * ((Rectangle) shape).getDimensionB();
+        } else {
+            return Math.PI * Math.pow(((Circle) shape).getRadius(), 2);
+        }
     }
 
-    public static double calculateRectanglePerimeter(Rectangle rectangle){
-        return (2 * rectangle.getDimensionA() + 2 * rectangle.getDimensionB());
-    }
-
-    public static double calculateCircleArea(Circle circle){
-        return Math.PI * Math.pow(circle.getRadius(), 2);
-    }
-
-    public static double calculateCirclePerimeter(Circle circle){
-        return 2 * Math.PI * circle.getRadius();
+    public static double calculatePerimeter(Shape shape) {
+        if (shape instanceof Rectangle) {
+            return (2 * ((Rectangle) shape).getDimensionA() + 2 * ((Rectangle) shape).getDimensionB());
+        } else {
+            return 2 * Math.PI * ((Circle) shape).getRadius();
+        }
     }
 }

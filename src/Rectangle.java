@@ -1,4 +1,4 @@
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
 
     private double dimensionA;
     private double dimensionB;
