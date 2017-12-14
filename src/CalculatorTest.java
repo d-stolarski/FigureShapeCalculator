@@ -14,9 +14,9 @@ public class CalculatorTest {
                 ((Rectangle) shapes[0]).getDimensionB(), ShapeCalculator.calculatePerimeter(shapes[0]));
 
         System.out.printf("\nPole koła o promieniu %.1f wynosi %.1f", ((Circle) shapes[1]).getRadius(),
-                ShapeCalculator.calculateArea((Circle) shapes[1]));
+                ShapeCalculator.calculateArea(shapes[1]));
         System.out.printf("\nObwód koła o promieniu %.1f wynosi %.1f", ((Circle) shapes[1]).getRadius(),
-                ShapeCalculator.calculatePerimeter((Circle) shapes[1]));
+                ShapeCalculator.calculatePerimeter(shapes[1]));
 
         System.out.printf("\nPole prostokąta o bokach %.1f i %.1f wynosi %.1f", ((Rectangle) shapes[2]).getDimensionA(),
                 ((Rectangle) shapes[2]).getDimensionB(), ShapeCalculator.calculateArea(shapes[2]));
